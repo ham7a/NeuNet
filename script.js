@@ -46,3 +46,6 @@ function setRandomColor() {
   colorEl.style.backgroundColor = 
     `rgba(${color.r * 255}, ${color.g * 255}, ${color.b * 255})`
 }
+
+const diagram = document.getElementById('diagram')
+diagram.innerHTML = brain.utilities.toSVG(net)
